@@ -6,6 +6,10 @@
 
 ## Project plan
 
+I used github projects along with issues to plan and manage my project.
+
+![](images/github_projects.png)
+
 ## Requirements
 
 ## Minimal Viable Product
