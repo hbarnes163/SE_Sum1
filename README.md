@@ -2,9 +2,15 @@
 
 ## Project proposal
 
-In this project I am going to create a simple web app for the purpose of randomly generating a list of a specified 
+In this project I am going to create a simple web app for the purpose of randomly generating a list of a specified number of numbers.
 
 ## Project design
+
+I used figma to design and prototype my project. This involved creating a basic layout of the app including 3 different inputs and a button to generate the numbers. I used figma protyping to show how once the button was clicked the numbers generated would appear below.
+
+![](images/figma1.png)
+
+![](images/figma2.png)
 
 ## Project plan
 
@@ -16,7 +22,9 @@ I used github projects along with issues to plan and manage my project.
 
 ## Minimal Viable Product
 
-The first stage of creating the minimal viable project (MVP) was first to understand the tech stack. Having never worked with github pages before I first wanted to ensure that my project could be hosted on the platform. I did this by first creating an HTML file and configuring the github actions to upload this to github pages. I then incorporated css into the HTML file and pushed the updates. The github actions enabled each new update to the branch to automatically update the github pages reducing the manual processes. I then tested the incorporation of Javascript using a basic button. 
+The first stage of creating the minimal viable project (MVP) was first to understand the tech stack. Having never worked with github pages before I first wanted to ensure that my project could be hosted on the platform. I did this by first creating an HTML file and configuring the github actions to upload this to github pages. I then incorporated css into the HTML file and pushed the updates. The github actions enabled each new update to the branch to automatically update the github pages reducing the manual processes. I then tested the incorporation of Javascript using a basic button.
+
+I then focused on writing my unit testing framework to catch any errors during the development phase. This reduces the costs of bug fixes later on in the development.
 
 
 ## Testing
