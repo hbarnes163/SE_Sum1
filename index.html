@@ -1,13 +1,27 @@
-<h1>Create a basic web app</h1>
-
-<body>
-    <div id="app">
-        <h2>Welcome to my web app!</h2>
-        <button id="clickMeBtn">Click Me!</button>
-        <p id="output-field" class = "output-field"></p>
-    </div>
-</body>
+<html>
+    <head>
+        <title>Random number generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Random number generator</h1>
+        <div id="app">
+            <h2>Generate random numbers between a min and max value.</h2>
+            <p>How many numbers do you want to generate?</p>
+            <input type="number" id="n-input" placeholder="1">
+            <p>What is the min?</p>
+            <input type="number" id="min-input" placeholder="Min value">
+            <p>What is the max?</p>
+            <input type="number" id="max-input" placeholder="Max value">
+            <br></br>
+            <button id="generate">Generate</button>
+        </div>
+        <div id="result">
+            <h2>Generated Numbers:</h2>
+            <ul id="number-list"></ul>
+        </div>
+    </body>
 
 <link rel="stylesheet" href="index.css">
-
+</html>
 <script src="index.js"></script>
