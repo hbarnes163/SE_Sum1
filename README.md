@@ -2,6 +2,8 @@
 
 ## Project proposal
 
+In this project I am going to create a simple web app for the purpose of randomly generating a list of a specified 
+
 ## Project design
 
 ## Project plan
@@ -13,6 +15,9 @@ I used github projects along with issues to plan and manage my project.
 ## Requirements
 
 ## Minimal Viable Product
+
+The first stage of creating the minimal viable project (MVP) was first to understand the tech stack. Having never worked with github pages before I first wanted to ensure that my project could be hosted on the platform. I did this by first creating an HTML file and configuring the github actions to upload this to github pages. I then incorporated css into the HTML file and pushed the updates. The github actions enabled each new update to the branch to automatically update the github pages reducing the manual processes. I then tested the incorporation of Javascript using a basic button. 
+
 
 ## Testing
 
