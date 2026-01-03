@@ -24,10 +24,12 @@ I used github projects along with issues to plan and manage my project.
 
 The first stage of creating the minimal viable project (MVP) was first to understand the tech stack. Having never worked with github pages before I first wanted to ensure that my project could be hosted on the platform. I did this by first creating an HTML file and configuring the github actions to upload this to github pages. I then incorporated css into the HTML file and pushed the updates. The github actions enabled each new update to the branch to automatically update the github pages reducing the manual processes. I then tested the incorporation of Javascript using a basic button.
 
-I then focused on writing my unit testing framework to catch any errors during the development phase. This reduces the costs of bug fixes later on in the development.
+I then focused on writing my unit testing framework to catch any errors during the development phase. This reduces the costs of bug fixes later on in the development. To do this I created a basic functions file with a simple test using the jest testing framework.
 
 
 ## Testing
+
+I started with a very basic test framework to ensure that jest was working correctly on my system. ![](images/basic_jest-tests.png) Once I had ensured that the tests were working correctly locally I pushed them to github.
 
 ## Documentation
 
@@ -37,7 +39,11 @@ I then focused on writing my unit testing framework to catch any errors during t
 
 #### Running the application locally
 
-On organisation non-developer devices it is not possible to install node.js without obtaining additional permissions which require a lengthy approval process. To run the application locally you will either need a developer laptop or to use a personal laptop. If you believe there is business justification for having access to node.js then I recommend reaching out to the analytics enablement hub or the data community who will be able to offer additional advice
+On organisation non-developer devices it is not possible to install node.js without obtaining additional permissions which require a lengthy approval process. To run the application locally you will either need a developer laptop or to use a personal laptop. If you believe there is business justification for having access to node.js then I recommend reaching out to the analytics enablement hub or the data community who will be able to offer additional advice.
+
+##### Installing node.js and npm
+
+To run this project locally you need an installation of node.js and npm. The easiest way to do this is to install node.js from [this link](https://nodejs.org/en/download/). I downloaded the prebuild version for windows as I didn't have docker on my computer which also came with npm reducing the need for two installations and ensuring compatibility between the two programs.
 
 ## Evaluation
 
