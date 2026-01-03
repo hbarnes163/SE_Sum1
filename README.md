@@ -22,6 +22,10 @@ To do this I used an agile framework based around sprints, this was because due 
 
 ![](images/timeline.png)
 
+When writing the tests to check the random integer generator functionality the CI testing which I set-up earlier raised an error in the tests, thankfully this was easily fixable at this stage and I addressed the error in the current sprint.
+
+![](images/failed_test.png)
+
 ## Requirements
 
 I used github issues to set out the requirements of the project using github projects to label the different prioritises so it was easy to see the relative importance of meeting each requirement in the sprint. There are additional requirements which are left as open tickets which could be completed in a second stage of the project using additional sprints.
