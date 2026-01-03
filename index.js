@@ -1,4 +1,4 @@
-import { randomInt } from './randomint.js';
+import { intList } from './intlist.js';
 
 const n_input = document.getElementById('n-input');
 
@@ -11,5 +11,5 @@ const clicked = document.getElementById('generate');
 const outputClicked = document.getElementById('number-list');
 
 clicked.addEventListener('click', () => {
-    outputClicked.innerHTML = randomInt(parseInt(min_input.value), parseInt(max_input.value));
+    outputClicked.innerHTML = intList(parseInt(n_input.value), parseInt(min_input.value), parseInt(max_input.value));
 });
