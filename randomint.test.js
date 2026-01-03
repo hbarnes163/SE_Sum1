@@ -1,4 +1,4 @@
-const randomInt = require('./randomint');
+import { randomInt } from './randomint.js';
 
 test('randomInt generates number within range', () => {
     const min = 1;

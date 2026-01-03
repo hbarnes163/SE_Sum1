@@ -1,4 +1,4 @@
-const randomInt = require('./randomint');
+import { randomInt } from './randomint.js';
 
 const n_input = document.getElementById('n-input');
 
