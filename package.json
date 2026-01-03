@@ -1,0 +1,21 @@
+{
+  "name": "se_sum1",
+  "version": "1.0.0",
+  "description": "In this project I am going to create a simple web app for the purpose of randomly generating a list of a specified number of numbers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbarnes163/SE_Sum1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hbarnes163/SE_Sum1/issues"
+  },
+  "homepage": "https://github.com/hbarnes163/SE_Sum1#readme"
+}
