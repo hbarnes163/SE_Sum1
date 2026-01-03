@@ -29,7 +29,7 @@ I then focused on writing my unit testing framework to catch any errors during t
 
 ## Testing
 
-I started with a very basic test framework to ensure that jest was working correctly on my system. ![](images/basic_jest-tests.png) Once I had ensured that the tests were working correctly locally I pushed them to github.
+I started with a very basic test framework to ensure that jest was working correctly on my system. ![](images/basic_jest-tests.png) Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever I push changes or do a pull request to the master branch the tests are automatically conducted ensuring that error are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
 
 ## Documentation
 
