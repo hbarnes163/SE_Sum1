@@ -59,6 +59,10 @@ On organisation non-developer devices it is not possible to install node.js with
 
 To run this project locally you need an installation of node.js and npm. The easiest way to do this is to install node.js from [this link](https://nodejs.org/en/download/). I downloaded the prebuild version for windows as I didn't have docker on my computer which also came with npm reducing the need for two installations and ensuring compatibility between the two programs.
 
+##### Using live server to run the application
+
+If working in visual studio code, which I reccomend due to it's ability to work with JS, HTML and CSS at the same time, you can install the Live Server extension from Ritwick Dey which can be found in the extensions tab in Visual Studio Code. Once installed you can use the Go Live button to load the website in your defaul browser. This enables live testing of the web app to ensure functionality before it is deployed to github pages.
+
 ## Evaluation
 
 

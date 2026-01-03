@@ -1,0 +1,10 @@
+{
+    "presets": [
+      // Target Node.js version Jest uses (check with `node -v`)
+      ["@babel/preset-env", { "targets": { "node": "current" } }],
+      // Transpile React JSX
+      ["@babel/preset-react", { "runtime": "automatic" }], // For React 17+
+      // Transpile TypeScript to JavaScript
+      "@babel/preset-typescript"
+    ]
+  }
