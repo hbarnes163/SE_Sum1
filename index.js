@@ -1,3 +1,5 @@
+const randomInt = require('./randomint');
+
 const n_input = document.getElementById('n-input');
 
 const min_input = document.getElementById('min-input');
@@ -9,5 +11,5 @@ const clicked = document.getElementById('generate');
 const outputClicked = document.getElementById('number-list');
 
 clicked.addEventListener('click', () => {
-    outputClicked.innerHTML = 'Button Clicked!';
+    outputClicked.innerHTML = randomInt(parseInt(min_input.value), parseInt(max_input.value));
 });

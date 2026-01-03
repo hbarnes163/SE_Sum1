@@ -35,6 +35,8 @@ test('randomInt works with min greater than max', () => {
     const min = 10;
     const max = 1;
     const result = randomInt(min, max);
-    expect(result).toBeGreaterThanOrEqual(min);
-    expect(result).toBeLessThanOrEqual(max);
+    const realMin = Math.min(min, max);
+    const realMax = Math.max(min, max);
+    expect(result).toBeGreaterThanOrEqual(realMin);
+    expect(result).toBeLessThanOrEqual(realMax);
 });
