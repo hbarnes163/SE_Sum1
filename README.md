@@ -31,6 +31,14 @@ I then focused on writing my unit testing framework to catch any errors during t
 
 ## Documentation
 
+### User documentation
+
+### Technical documentation
+
+#### Running the application locally
+
+On organisation non-developer devices it is not possible to install node.js without obtaining additional permissions which require a lengthy approval process. To run the application locally you will either need a developer laptop or to use a personal laptop. If you believe there is business justification for having access to node.js then I recommend reaching out to the analytics enablement hub or the data community who will be able to offer additional advice
+
 ## Evaluation
 
 
