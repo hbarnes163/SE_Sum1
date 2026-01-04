@@ -40,3 +40,10 @@ test('randomInt works with min greater than max', () => {
     expect(result).toBeGreaterThanOrEqual(realMin);
     expect(result).toBeLessThanOrEqual(realMax);
 });
+
+test('randomInt throws error for non-numeric inputs', () => {
+    expect(() => randomInt('a', 10)).toThrow('Min and max must both be integers.');
+    expect(() => randomInt(1, null)).toThrow('Min and max must both be integers.');
+    expect(() => randomInt(undefined, 10)).toThrow('Min and max must both be integers.');
+    expect(() => randomInt(10, '3')).toThrow('Min and max must both be integers.');
+});

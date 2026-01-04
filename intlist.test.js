@@ -24,3 +24,15 @@ test('intList with min equal to max returns array of identical numbers', () => {
     const result = intList(n, min, max);
     expect(result).toEqual([5, 5, 5]);
 });
+
+test('intList throws error for non-integer n', () => {
+    expect(() => intList(2.5, 1, 10)).toThrow('n must be an integer.');
+    expect(() => intList('3', 1, 10)).toThrow('n must be an integer.');
+});
+
+test('intList throws error for non-integer min or max', () => {
+    expect(() => intList(3, 1.5, 10)).toThrow('Min and max must both be integers.');
+    expect(() => intList(3, 1, '10')).toThrow('Min and max must both be integers.');
+    expect(() => intList(3, NaN, 10)).toThrow('Min and max must both be integers.');
+    expect(() => intList(3, 'a', null)).toThrow('Min and max must both be integers.');
+});

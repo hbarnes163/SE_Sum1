@@ -11,5 +11,6 @@ const clicked = document.getElementById('generate');
 const outputClicked = document.getElementById('number-list');
 
 clicked.addEventListener('click', () => {
-    outputClicked.innerHTML = intList(parseInt(n_input.value), parseInt(min_input.value), parseInt(max_input.value));
+    const list_items = intList(parseInt(n_input.value), parseFloat(min_input.value), parseFloat(max_input.value));
+    outputClicked.innerHTML = list_items.join('<br>');  
 });
