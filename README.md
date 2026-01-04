@@ -28,7 +28,7 @@ When writing the tests to check the random integer generator functionality the C
 
 ## Requirements
 
-I used github issues to set out the requirements of the project using github projects to label the different prioritises so it was easy to see the relative importance of meeting each requirement in the sprint. There are additional requirements which are left as open tickets which could be completed in a second stage of the project using additional sprints.
+I used github issues to set out the requirements of the project using github projects to label the different priorities so it was easy to see the relative importance of meeting each requirement in the sprint. There are additional requirements which are left as open tickets which could be completed in a second stage of the project using additional sprints.
 
 Once the requirements for the project had been satisfied I merged that branch into the main branch using a pull request. I ensured that the issue was linked to the pull request by tagging it, however, noticed that this often resulted in duplications of an issue as it existed as a pull request and issue in the github project. Hence, I altered the github projects workflow to only add issues rather than pull requests to the project to fix this issue.
 
@@ -40,9 +40,13 @@ I then focused on writing my unit testing framework to catch any errors during t
 
 After this I expanded the HTML to contain all the inputs and outputs which would be needed in the final application. After doing this I linked the javascript button with the generate button and tested printing a simple text string as the output. I then tested this locally using Live Server where I noticed that the button was not working and a string would not be printed. Upon doing further research I noticed that to import functions into a javascript file for web app you needed to use ES module syntax rather than CommonJS syntax. Once I fixed this the web app ran correctly, however, the tests stopped running as the Jest testing framework I used worked only on CommonJS syntax. To address this I installed and setup the Babel config file, which explicitally calls for ES module syntax to be converted to CommonJS so that the Jest testing runs correctly.
 
+After this I wrote the two underlying javascript functions to generate both a random number and a list of random numbers. I linked this up with the existing code ensuring that each number was printed on a new line.
+
 ## Testing
 
 I started with a very basic test framework to ensure that jest was working correctly on my system. ![](images/basic_jest-tests.png) Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever I push changes or do a pull request to the master branch the tests are automatically conducted ensuring that error are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
+
+I also conducted manual testing of the webpage hosted both locally using Live Server and on the cloud with GitHub pages. This gave me reassurance that users would not encounter issues when using the app, but ahead of full roll-out I would ensure that proper UAT testing was conducted.
 
 ## Documentation
 
