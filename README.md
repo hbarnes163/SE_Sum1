@@ -38,7 +38,7 @@ The first stage of creating the minimal viable project (MVP) was first to unders
 
 I then focused on writing my unit testing framework to catch any errors during the development phase. This reduces the costs of bug fixes later on in the development. To do this I created a basic functions file with a simple test using the jest testing framework.
 
-After this I expanded the HTML to contain all the inputs and outputs which would be needed in the final application.
+After this I expanded the HTML to contain all the inputs and outputs which would be needed in the final application. After doing this I linked the javascript button with the generate button and tested printing a simple text string as the output. I then tested this locally using Live Server where I noticed that the button was not working and a string would not be printed. Upon doing further research I noticed that to import functions into a javascript file for web app you needed to use ES module syntax rather than CommonJS syntax. Once I fixed this the web app ran correctly, however, the tests stopped running as the Jest testing framework I used worked only on CommonJS syntax. To address this I installed and setup the Babel config file, which explicitally calls for ES module syntax to be converted to CommonJS so that the Jest testing runs correctly.
 
 
 ## Testing
@@ -59,7 +59,15 @@ On organisation non-developer devices it is not possible to install node.js with
 
 To run this project locally you need an installation of node.js and npm. The easiest way to do this is to install node.js from [this link](https://nodejs.org/en/download/). I downloaded the prebuild version for windows as I didn't have docker on my computer which also came with npm reducing the need for two installations and ensuring compatibility between the two programs.
 
-##### Using live server to run the application
+##### Setting up your local environment
+
+To access the code and run the project locally you first need to clone this git repository, to do this you will need to have the software git on your local system. The instructions needed to install git can be found [here](https://git-scm.com/install/windows), once you've downloaded the file then you can click to start the installer and go through the options to configure windows for your device. Once you have git setup then navigate to your preferred IDE, I would reccomend using Visual Studio Code as it works well across programming languages and has useful extensions for debugging and running code. If you haven't got Visual Studio Code installed already then the installation guide can be found [here](https://code.visualstudio.com/Download).
+
+Once you've opened visual studio there should be a welcome page which appears upon start up, one of the options here is to clone a git repository. Click on that and paste the repository URL which can be found clicking on the Code button in the top right of this Webpage. You should also create a new folder for this code to be stored in. Once you've cloned the repository all the files should appear in the file explorer tab.
+
+To install the correct dependencies open up a new terminal with command prompt, then run `npm install`. This will ensure that all the correct dependencies and versions are installed and you are ready to be able to run the code locally.
+
+##### Using live server to run the application locally
 
 If working in visual studio code, which I reccomend due to it's ability to work with JS, HTML and CSS at the same time, you can install the Live Server extension from Ritwick Dey which can be found in the extensions tab in Visual Studio Code. Once installed you can use the Go Live button to load the website in your defaul browser. This enables live testing of the web app to ensure functionality before it is deployed to github pages.
 
