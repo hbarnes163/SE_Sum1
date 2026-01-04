@@ -48,6 +48,16 @@ I started with a very basic test framework to ensure that jest was working corre
 
 ### User documentation
 
+#### Using the website
+
+The application can be accessed from the following [website](https://hbarnes163.github.io/SE_Sum1/). On the website there are 3 different inputs
+
+#### Suggesting feedback and improvements
+
+If you notice a bug or wish to request a new feature you can do so by adding an issue to the [GitHub page](https://github.com/hbarnes163/SE_Sum1/issues). Before doing this please check through the open tickets to see if there is already a ticket with your requirements or setting out the bug you have observed. If you feel that the ticket is relevant but doesn't address the full issue then you can set out additional detail in the comments section of that ticket rather than raising a new one.
+
+If there is no relevant ticket then you should create a new issue. Include as much detail as possible in the description of the ticket and tag it with the relevant label. The software engineering team will then be able to look over all open tickets when planning the next sprint and may be in contact with additional queries when they begin to work on the item.
+
 ### Technical documentation
 
 #### Running the application locally
@@ -84,7 +94,7 @@ You must create a new branch to work from, this should have an intuitive name an
 
 ##### Update the main code
 
-Once all this is done you can push your code to GitHub and create a pull request. Ensure that you reference which issues are closed in the description of the Pull Request and assign someone to review the changes to the code. Once they are content with the changes provided the CI testing has passed the Pull Request may be merged into the main branch. Ths automatically triggers the deployment of the GitHub pages app which will update the Live App with your changes.
+Once all this is done you can push your code to GitHub and create a pull request. Ensure that you reference which issues are closed in the description of the Pull Request and assign someone to review the changes to the code. Once they are content with the changes and provided the CI testing has passed the Pull Request may be merged into the main branch. Ths automatically triggers the deployment of the GitHub pages app which will update the Live App with your changes.
 
 ## Evaluation
 
