@@ -20,12 +20,12 @@
 
 /* General styling for the headers */
 h1 {
-    color: var(--bank_midblue);
+    color: var(--bank_blue);
     font-family: var(--header_font);
     text-align: center;
 }
 
-h1 {
+h2 {
     color: var(--bank_midblue);
     font-family: var(--header_font);
     text-align: center;
