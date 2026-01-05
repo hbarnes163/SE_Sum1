@@ -42,6 +42,8 @@ I then focused on writing my unit testing framework to catch any errors during t
 
 After this I expanded the HTML to contain all the inputs and outputs which would be needed in the final application. After doing this I linked the javascript button with the generate button and tested printing a simple text string as the output. I then tested this locally using Live Server where I noticed that the button was not working and a string would not be printed. Upon doing further research I noticed that to import functions into a javascript file for web app you needed to use ES module syntax rather than CommonJS syntax. Once I fixed this the web app ran correctly, however, the tests stopped running as the Jest testing framework I used worked only on CommonJS syntax. To address this I installed and setup the Babel config file, which explicitally calls for ES module syntax to be converted to CommonJS so that the Jest testing runs correctly.
 
+After testing all the HTML and Javascript manually I then added the CSS styling, I referenced the figma design I created earlier while making some tweaks to make the application more user friendly.
+
 ## Testing
 
 ### Continuous integration testing
@@ -50,7 +52,19 @@ I started with a very basic test framework to ensure that jest was working corre
 
 ![](images/basic_jest-tests.png) 
 
-Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever I push changes or do a pull request to the master branch the tests are automatically conducted ensuring that error are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
+Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever I push changes or do a pull request to the main branch the tests are automatically conducted ensuring that error are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
+
+![](images/successful_pull.png)
+
+### Manual testing
+
+I also conducted manual testing using the web app to ensure that users would find the app easy to use and not encounter any bugs. While doing this I noticed that it was hard to tell when the button was hovered over as it didn't change, hence I added additional CSS styling to address this issue. All other parts of the application worked as expected.
+
+### Accessibility testing
+
+I used the issues tab to inspect the hosted webpage on github pages to view any accessibility concerns. This showed an issue of the HTML element not having a language attribute. This poses an issue for those with screen readers which might be unsure which language the webpage is in.
+
+![](images/google_inspect.png)
 
 ## User documentation
 
@@ -111,5 +125,5 @@ Once all this is done you can push your code to GitHub and create a pull request
 
 Overall, while the design and hence MVP were simple the execution of the project followed good project management standards. The use of GitHub projects with automated actions from GitHub issues made it easy to plan the project ensuring that it remained on track. The MVP has been thoroughly tested and any bugs picked up in development have been resolved. However, there is still room for improvement and for new features to be added. For future sprints developers should refer to the open GitHub issues page which contains new features and bugs to be addressed. Prioritisation and project planning can then be done with the linked GitHub projects page.
 
-I did encounter some issues while working on this project, Jest and Live Server used different syntaxes to import functions from other files resulting in errors which took some time to understand and resolve. The device I initially started working on was not able to install Node meaning I had to setup Git and Node on a different device to work on the development. These issues resulted in certain features being delayed by a sprint but didn't have an effect on the final project delivery.
+I did encounter some issues while working on this project, Jest and Live Server used different syntaxes to import functions from other files resulting in errors which took some time to understand and resolve. The device I initially started working on was not able to install Node meaning I had to setup Git and Node on a different device to work on the development. These issues resulted in certain features being delayed by a sprint but didn't have an effect on the final project delivery which was a success.
 

@@ -18,12 +18,20 @@
   --red_colour: #ff0000;
 }
 
+/* General styling for the headers */
 h1 {
+    color: var(--bank_blue);
+    font-family: var(--header_font);
+    text-align: center;
+}
+
+h2 {
     color: var(--bank_midblue);
     font-family: var(--header_font);
     text-align: center;
 }
 
+/* General styling for the body */
 body {
     font-family: var(--body_font);
     font-size: var(--body_font_size);
@@ -31,6 +39,7 @@ body {
     text-align: center;
 }
 
+/* Styling for the rows and columns which control the input locations */
 .row {
     display: flex;
     width: max-content;
@@ -39,14 +48,15 @@ body {
 
 .column {
     float: centre;
-    width: 45%;
+    width: 45%; /* Adjust the width as needed, 2 of this value + column-spacer width should sum to 100% */
     text-align: left;
 }
 
 .column-spacer {
-    width: 10%;
+    width: 10%; /* Adjust the width as needed, 2 column width + this width should sum to 100% */
 }
 
+/* Styling for the input boxes */
 input {
     font-size: var(--input_font);
     font-family: var(--body_font);
@@ -56,6 +66,7 @@ input {
     margin: 5px 0;
 }
 
+/* Styling for the buttons */
 button {
     background-color: var(--bank_aqua);
     color: var(--bank_blue);
@@ -69,11 +80,13 @@ button {
     align-items: center;
 }
 
+/* When hovered over the button will change colour */
 button:hover {
     background-color: var(--bank_midblue);
     color: var(--light_text);
 }
 
+/* Styling for the number list output box */
 #number-list {
     background-color: var(--bank_stone);
     width: min-content;
