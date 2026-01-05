@@ -42,7 +42,13 @@ After this I expanded the HTML to contain all the inputs and outputs which would
 
 ## Testing
 
-I started with a very basic test framework to ensure that jest was working correctly on my system. ![](images/basic_jest-tests.png) Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever I push changes or do a pull request to the master branch the tests are automatically conducted ensuring that error are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
+### Continuous integration testing
+
+I started with a very basic test framework to ensure that jest was working correctly on my system. 
+
+![](images/basic_jest-tests.png) 
+
+Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever I push changes or do a pull request to the master branch the tests are automatically conducted ensuring that error are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
 
 ## Documentation
 
@@ -50,7 +56,7 @@ I started with a very basic test framework to ensure that jest was working corre
 
 #### Using the website
 
-The application can be accessed from the following [website](https://hbarnes163.github.io/SE_Sum1/). On the website there are 3 different inputs
+The application can be accessed from the following [website](https://hbarnes163.github.io/SE_Sum1/). On the website there are 3 different inputs.
 
 #### Suggesting feedback and improvements
 
@@ -62,7 +68,7 @@ If there is no relevant ticket then you should create a new issue. Include as mu
 
 #### Running the application locally
 
-On organisation non-developer devices it is not possible to install node.js without obtaining additional permissions which require a lengthy approval process. To run the application locally you will either need a developer laptop or to use a personal laptop. If you believe there is business justification for having access to node.js then I recommend reaching out to the analytics enablement hub or the data community who will be able to offer additional advice.
+On organisation non-developer devices it is not possible to install node.js without obtaining additional permissions which require a lengthy approval process. To run the application locally you will either need a developer laptop or to use a personal laptop. If you believe there is business justification for having access to node.js then I recommend reaching out to the analytics enablement hub or the data community who will be able to offer additional advice. You can use Live Server to run the whole application on an organisation laptop and run node in the browser but this won't give you the full functionality.
 
 ##### Installing node.js and npm
 

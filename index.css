@@ -1,3 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Define the main theme colours for my organisation*/
+:root {
+  --bank_blue: #12273F;
+  --bank_aqua: #3CD7D9;
+  --bank_stone: #C4C9CF;
+  --bank_midblue: #415265;
+  --dark_text: #0D1B2C;
+  --light_text:#F6F6F6;
+  --header_font: "Roboto", sans-serif;
+  --body_font: "Inter", sans-serif;
+  --body_font_size: 14;
+  --input_font: 14;
+  --white_colour: #FFFFFF;
+  --bank_stone_transparent: #e1e5ea;
+  --red_colour: #ff0000;
+}
+
 h1 {
-    color: blue;
+    color: var(--bank_midblue);
+    font-family: var(--header_font);
+    text-align: center;
+}
+
+body {
+    font-family: var(--body_font);
+    font-size: var(--body_font_size);
+    color: var(--bank_blue);
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    width: max-content;
+    margin: auto;
+}
+
+.column {
+    float: centre;
+    width: 45%;
+    text-align: left;
+}
+
+.column-spacer {
+    width: 10%;
+}
+
+input {
+    font-size: var(--input_font);
+    font-family: var(--body_font);
+    border-radius: 5px;
+    border: 1px solid var(--bank_midblue);
+    padding: 5px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: var(--bank_aqua);
+    color: var(--bank_blue);
+    border-color: var(--bank_blue);
+    font-size: var(--input_font);
+    font-family: var(--body_font);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+button:hover {
+    background-color: var(--bank_midblue);
+    color: var(--light_text);
+}
+
+#number-list {
+    background-color: var(--bank_stone);
+    width: min-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
 }

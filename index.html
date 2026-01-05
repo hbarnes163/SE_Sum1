@@ -2,19 +2,33 @@
     <head>
         <title>Random number generator</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
     </head>
     <body>
         <h1>Random number generator</h1>
         <div id="app">
             <h2>Generate random numbers between a min and max value.</h2>
-            <p>How many numbers do you want to generate?</p>
+            <label for="n-input">How many numbers do you want to generate?</label>
+            <br>
             <input type="number" id="n-input" value = 1>
-            <p>What is the min?</p>
-            <input type="number" id="min-input" value = 0>
-            <p>What is the max?</p>
-            <input type="number" id="max-input" value = 9>
             <br></br>
-            <button id="generate">Generate</button>
+            <div id="min-max-input" class="row">
+                <div class="column">
+                    <label for="min-input">The minimum</label>
+                    <br>
+                    <input type="number" id="min-input" value = 0>
+                </div>
+                <div class="column-spacer"></div>
+                <div class="column">
+                    <label for="max-input">The maximum</label>
+                    <br>
+                    <input type="number" id="max-input" value = 9>
+                </div>
+            </div>
+            <br></br>
+            <button id="generate">
+                <i class="fas fa-play"></i> Generate
+            </button>
         </div>
         <div id="result">
             <h2>Generated Numbers:</h2>
