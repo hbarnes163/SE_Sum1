@@ -1,8 +1,8 @@
-# SE_Sum1
+# Random number generator
 
 ## Project proposal
 
-In this project I am going to create a simple web app for the purpose of randomly generating a list of a specified number of numbers.
+In this project I am going to create a simple web app for the purpose of randomly generating a list of a specified number of numbers. There will also be options for specifying a minimum and maximum value.
 
 ## Project design
 
