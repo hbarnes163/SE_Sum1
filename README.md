@@ -30,7 +30,7 @@ When writing the tests to check the random integer generator functionality the C
 
 ## Requirements
 
-I used github issues to set out the requirements of the project using github projects to label the different prioritises so it was easy to see the relative importance of meeting each requirement in the sprint. There are additional requirements which are left as open tickets which could be completed in a second stage of the project using additional sprints.
+I used github issues to set out the requirements of the project using github projects to label the different priorities so it was easy to see the relative importance of meeting each requirement in the sprint. There are additional requirements which are left as open tickets which could be completed in a second stage of the project using additional sprints but are not necessary for delivery of the MVP.
 
 Once the requirements for the project had been satisfied I merged that branch into the main branch using a pull request. I ensured that the issue was linked to the pull request by tagging it, however, noticed that this often resulted in duplications of an issue as it existed as a pull request and issue in the github project. Hence, I altered the github projects workflow to only add issues rather than pull requests to the project to fix this issue.
 
@@ -42,7 +42,7 @@ I then focused on writing my unit testing framework to catch any errors during t
 
 After this I expanded the HTML to contain all the inputs and outputs which would be needed in the final application. After doing this I linked the javascript button with the generate button and tested printing a simple text string as the output. I then tested this locally using Live Server where I noticed that the button was not working and a string would not be printed. Upon doing further research I noticed that to import functions into a javascript file for web app you needed to use ES module syntax rather than CommonJS syntax. Once I fixed this the web app ran correctly, however, the tests stopped running as the Jest testing framework I used worked only on CommonJS syntax. To address this I installed and setup the Babel config file, which explicitally calls for ES module syntax to be converted to CommonJS so that the Jest testing runs correctly.
 
-After testing all the HTML and Javascript manually I then added the CSS styling, I referenced the figma design I created earlier while making some tweaks to make the application more user friendly.
+After testing all the HTML and Javascript manually I then added the CSS styling, I referenced the figma design I created earlier while making some tweaks to make the application more user friendly and accessible. 
 
 ## Testing
 
@@ -52,13 +52,13 @@ I started with a very basic test framework to ensure that jest was working corre
 
 ![](images/basic_jest-tests.png) 
 
-Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever I push changes or do a pull request to the main branch the tests are automatically conducted ensuring that error are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
+Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever changes are push or a pull request is started the tests are automatically conducted ensuring that errors are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
 
 ![](images/successful_pull.png)
 
 ### Manual testing
 
-I also conducted manual testing using the web app to ensure that users would find the app easy to use and not encounter any bugs. While doing this I noticed that it was hard to tell when the button was hovered over as it didn't change, hence I added additional CSS styling to address this issue. All other parts of the application worked as expected.
+I also conducted manual testing using the web app to ensure that users would find the app easy to use and not encounter any bugs. While doing this I noticed that it was hard to tell when the button was hovered over as it didn't change formatting, hence I added additional CSS styling to address this issue. All other parts of the application worked as expected. Ahead of final release I would also have the end users conduct UAT testing to identify any final bugs.
 
 ### Accessibility testing
 
@@ -76,22 +76,24 @@ I also used google lighthouse to test the webpage. This resulted in a very good 
 
 The application can be accessed from the following [website](https://hbarnes163.github.io/SE_Sum1/). On the website there are 3 different numeric inputs. 
 
+![](images/webpage.png)
+
 **How many numbers do you want to generate?** takes a positive integer input for the number of numbers to generate
 **The minimum** and **The maximum** each take integer inputs for the minimum and maximum limits of the generated values.
 
-**Generate**, once you are happy with the inputs click on the generate button to generate the list of numbers. If any of the above conditions are violated, e.g -1 numbers to generate, then the generate button will produce no numbers.
+**Generate**, once you are happy with the inputs click on the generate button to generate the list of numbers. If any of the above conditions are violated, e.g -1 numbers to generate, then the generate button will produce no numbers. Otherwise a list of numbers will appear below the generate button. If you are unhappy with the numbers or wish to change the inputs you can do so before clicking generate again.
 
 ### Suggesting feedback and improvements
 
 If you notice a bug or wish to request a new feature you can do so by adding an issue to the [GitHub page](https://github.com/hbarnes163/SE_Sum1/issues). Before doing this please look through the open tickets to see if there is already a ticket with your requirements or setting out the bug you have observed. If you feel that the ticket is relevant but doesn't address the full issue then you can set out additional detail in the comments section of that ticket rather than raising a new one.
 
-If there is no relevant ticket then you should create a new issue. Include as much detail as possible in the description of the ticket and tag it with the relevant label. The software engineering team will then be able to look over all open tickets when planning the next sprint and may be in contact with additional queries when they begin to work on the item.
+If there is no relevant ticket then you should create a new issue. Include as much detail as possible in the description of the ticket, including the exact inputs which generated the bug, and tag it with the relevant label. The software engineering team will then be able to look over all open tickets when planning the next sprint and may be in contact with additional queries if they begin to work on the item.
 
 ## Technical documentation
 
 ### Running the application locally
 
-On organisation non-developer devices it is not possible to install node.js without obtaining additional permissions which require a lengthy approval process. To run the application locally you will either need a developer laptop or to use a personal laptop. If you believe there is business justification for having access to node.js then I recommend reaching out to the analytics enablement hub or the data community who will be able to offer additional advice. You can use Live Server to run the whole application on an organisation laptop and run node in the browser but this won't give you the full functionality.
+On organisation non-developer devices it is not possible to install node.js without obtaining additional permissions which require a lengthy approval process. To run the javascript code locally you will either need a developer laptop or to use a personal laptop. If you believe there is business justification for having access to node.js then I recommend reaching out to the analytics enablement hub or the data community who will be able to offer additional advice. You can use Live Server to run the whole application on an organisation laptop and run node in the browser console but this won't give you the full functionality.
 
 #### Installing node.js and npm
 
@@ -99,7 +101,7 @@ To run this project locally you need an installation of node.js and npm. The eas
 
 #### Setting up your local environment
 
-To access the code and run the project locally you first need to clone this git repository, to do this you will need to have the software git on your local system. The instructions needed to install git can be found [here](https://git-scm.com/install/windows), once you've downloaded the file then you can click to start the installer and go through the options to configure windows for your device. Once you have git setup then navigate to your preferred IDE, I would reccomend using Visual Studio Code as it works well across programming languages and has useful extensions for debugging and running code. If you haven't got Visual Studio Code installed already then the installation guide can be found [here](https://code.visualstudio.com/Download).
+To access the code and run the project locally you first need to clone this git repository, to do this you will need to have the software git on your local system. The instructions needed to install git can be found [here](https://git-scm.com/install/windows), once you've downloaded the file then you can click to start the installer and go through the options to configure windows for your device. Once you have git setup then navigate to your preferred IDE, I would recommend using Visual Studio Code as it works well across programming languages and has useful extensions for debugging and running code. If you haven't got Visual Studio Code installed already then the installation guide can be found [here](https://code.visualstudio.com/Download).
 
 Once you've opened visual studio there should be a welcome page which appears upon start up, one of the options here is to clone a git repository. Click on that and paste the repository URL which can be found clicking on the Code button in the top right of this Webpage. You should also create a new folder for this code to be stored in. Once you've cloned the repository all the files should appear in the file explorer tab.
 
@@ -107,19 +109,19 @@ To install the correct dependencies open up a new terminal with command prompt, 
 
 #### Using live server to run the application locally
 
-If working in visual studio code, which I reccomend due to it's ability to work with JS, HTML and CSS at the same time, you can install the Live Server extension from Ritwick Dey which can be found in the extensions tab in Visual Studio Code. Once installed you can use the Go Live button to load the website in your defaul browser. This enables live testing of the web app to ensure functionality before it is deployed to github pages.
+If working in visual studio code, which I recommend due to it's ability to work with JS, HTML and CSS at the same time, you can install the Live Server extension from Ritwick Dey which can be found in the extensions tab in Visual Studio Code. Once installed you can use the Go Live button to load the website in your default browser. This enables live testing of the web app to ensure functionality before it is deployed to github pages.
 
 ### Adding additional features
 
-If while working on the code you notices that there are additional features or bug fixes which could improve the application then please feel empowered to add to the application. In order to conform to best practice these are the steps which should be taken before additional items are added.
+If while working on the code you notice that there are additional features or bug fixes which could improve the application then please feel empowered to add to the application. In order to conform to best practice these are the steps which should be taken before additional items are added.
 
 #### Create a new ticket
 
-You must create a new ticket which is linked to the project as a GitHub issue, or assign yourself to an existing ticket. You should then create a new sprint in the github projects page detailing how long you expect to spend on the code improvement, or multiple improvements if it's a longer sprint or the issues are smaller. Then assign all of the relevant tickets to the sprint. Once this has been done you are ready to begin coding up the improvement
+You must create a new ticket which is linked to the project as a GitHub issue, or assign yourself to an existing ticket. You should then create a new sprint in the github projects page detailing how long you expect to spend on the code improvement. Then assign all of the relevant tickets to the sprint. Once this has been done you are ready to begin coding.
 
 #### Create a new branch
 
-You must create a new branch to work from, this should have an intuitive name and explain the feature you are aiming to improve. Once you've made the improvements then use Live server to test that the app works correctly on your local device. You must ensure that any new functions have quality tests written and check that all tests work correctly by running `npm test` in the command line. Ensure that the code is commented and update the User and Technical documentation with any changes made. You should also manually test the application and go through UAT testing to address any mistakes before using Live Server and google Lighthouse to check for any accessibility or performance issues.
+You must create a new branch to work from, this should have an intuitive name and explain the feature you are aiming to improve. Once you've made the improvements then use Live server to manually test that the app works correctly on your local device. You must ensure that any new functions have quality tests written and check that all tests work correctly by running `npm test` in the command line. Ensure that the code is commented and update the User and Technical documentation with any changes made. You should also test the application using Live Server and Google Lighthouse to check for any accessibility or performance issues. Finally conduct UAT testing to idenfity any bugs before live deployment.
 
 #### Update the main code
 
@@ -130,4 +132,3 @@ Once all this is done you can push your code to GitHub and create a pull request
 Overall, while the design and hence MVP were simple the execution of the project followed good project management standards. The use of GitHub projects with automated actions from GitHub issues made it easy to plan the project ensuring that it remained on track. The MVP has been thoroughly tested and any bugs picked up in development have been resolved. However, there is still room for improvement and for new features to be added. For future sprints developers should refer to the open GitHub issues page which contains new features and bugs to be addressed. Prioritisation and project planning can then be done with the linked GitHub projects page.
 
 I did encounter some issues while working on this project, Jest and Live Server used different syntaxes to import functions from other files resulting in errors which took some time to understand and resolve. The device I initially started working on was not able to install Node meaning I had to setup Git and Node on a different device to work on the development. These issues resulted in certain features being delayed by a sprint but didn't have an effect on the final project delivery which was a success.
-
