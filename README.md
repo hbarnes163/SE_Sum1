@@ -42,7 +42,13 @@ After this I expanded the HTML to contain all the inputs and outputs which would
 
 ## Testing
 
-I started with a very basic test framework to ensure that jest was working correctly on my system. ![](images/basic_jest-tests.png) Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever I push changes or do a pull request to the master branch the tests are automatically conducted ensuring that error are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
+### Continuous integration testing
+
+I started with a very basic test framework to ensure that jest was working correctly on my system. 
+
+![](images/basic_jest-tests.png) 
+
+Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever I push changes or do a pull request to the master branch the tests are automatically conducted ensuring that error are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
 
 ## Documentation
 
@@ -50,7 +56,7 @@ I started with a very basic test framework to ensure that jest was working corre
 
 #### Using the website
 
-The application can be accessed from the following [website](https://hbarnes163.github.io/SE_Sum1/). On the website there are 3 different inputs
+The application can be accessed from the following [website](https://hbarnes163.github.io/SE_Sum1/). On the website there are 3 different inputs.
 
 #### Suggesting feedback and improvements
 
