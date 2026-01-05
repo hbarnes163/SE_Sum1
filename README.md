@@ -66,6 +66,10 @@ I used the issues tab to inspect the hosted webpage on github pages to view any 
 
 ![](images/google_inspect.png)
 
+I also used google lighthouse to test the webpage. This resulted in a very good score across all tested attributes including accessibily which scored a 97.
+
+![](images/google_lighthouse.png)
+
 ## User documentation
 
 ### Using the website
@@ -115,7 +119,7 @@ You must create a new ticket which is linked to the project as a GitHub issue, o
 
 #### Create a new branch
 
-You must create a new branch to work from, this should have an intuitive name and explain the feature you are aiming to improve. Once you've made the improvements then use Live server to test that the app works correctly on your local device. You must ensure that any new functions have quality tests written and check that all tests work correctly by running `npm test` in the command line. Ensure that the code is commented and update the User and Technical documentation with any changes made.
+You must create a new branch to work from, this should have an intuitive name and explain the feature you are aiming to improve. Once you've made the improvements then use Live server to test that the app works correctly on your local device. You must ensure that any new functions have quality tests written and check that all tests work correctly by running `npm test` in the command line. Ensure that the code is commented and update the User and Technical documentation with any changes made. You should also manually test the application and go through UAT testing to address any mistakes before using Live Server and google Lighthouse to check for any accessibility or performance issues.
 
 #### Update the main code
 
