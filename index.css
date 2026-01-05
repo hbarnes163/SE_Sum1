@@ -43,6 +43,10 @@ button {
     align-items: center;
 }
 
-#result {
+#number-list {
     background-color: var(--bank_stone);
+    width: min-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
 }
