@@ -11,8 +11,8 @@
   --light_text:#F6F6F6;
   --header_font: "Roboto", sans-serif;
   --body_font: "Inter", sans-serif;
-  --main_font_size: 12;
-  --input_font: 12;
+  --body_font_size: 14;
+  --input_font: 14;
   --white_colour: #FFFFFF;
   --bank_stone_transparent: #e1e5ea;
   --red_colour: #ff0000;
@@ -21,10 +21,28 @@
 h1 {
     color: var(--bank_midblue);
     font-family: var(--header_font);
+    text-align: center;
 }
 
 body {
     font-family: var(--body_font);
-    font-size: var(--main_font_size);
+    font-size: var(--body_font_size);
     color: var(--bank_blue);
+    text-align: center;
+}
+
+button {
+    background-color: var(--bank_aqua);
+    color: var(--white_colour);
+    font-size: var(--input_font);
+    font-family: var(--body_font);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+#result {
+    background-color: var(--bank_stone);
 }
