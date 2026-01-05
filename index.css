@@ -31,9 +31,35 @@ body {
     text-align: center;
 }
 
+.row {
+    display: flex;
+    width: max-content;
+    margin: auto;
+}
+
+.column {
+    float: centre;
+    width: 45%;
+    text-align: left;
+}
+
+.column-spacer {
+    width: 10%;
+}
+
+input {
+    font-size: var(--input_font);
+    font-family: var(--body_font);
+    border-radius: 5px;
+    border: 1px solid var(--bank_midblue);
+    padding: 5px;
+    margin: 5px 0;
+}
+
 button {
     background-color: var(--bank_aqua);
-    color: var(--white_colour);
+    color: var(--bank_blue);
+    border-color: var(--bank_blue);
     font-size: var(--input_font);
     font-family: var(--body_font);
     border-radius: 5px;
@@ -41,6 +67,11 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     align-items: center;
+}
+
+button:hover {
+    background-color: var(--bank_midblue);
+    color: var(--light_text);
 }
 
 #number-list {
