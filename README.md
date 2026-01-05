@@ -16,11 +16,11 @@ The final project differed slightly from this design.
 
 ## Project plan
 
-I used github projects along with issues to plan and manage my project.
+I used GitHub projects along with issues to plan and manage my project.
 
 ![](images/github_projects.png)
 
-To do this I used an agile framework based around sprints, this was because due to holidays I needed to be flexible with project delivery. Working iteratively also ensured that I was able to continuously test the code and deployment with github pages ensuring that errors were spotted early on. I ensured I had a basic plan for each sprint by following a timeline as can be seen below, however, I added additional issues and tasks during each sprint when problems arose.
+To do this I used an agile framework based around sprints, this was because due to holidays I needed to be flexible with project delivery. Working iteratively also ensured that I was able to continuously test the code and deployment with GitHub pages ensuring that errors were spotted early on. I ensured I had a basic plan for each sprint by following a timeline as can be seen below, however, I added additional issues and tasks during each sprint when problems arose.
 
 ![](images/timeline.png)
 
@@ -30,13 +30,13 @@ When writing the tests to check the random integer generator functionality the C
 
 ## Requirements
 
-I used github issues to set out the requirements of the project using github projects to label the different priorities so it was easy to see the relative importance of meeting each requirement in the sprint. There are additional requirements which are left as open tickets which could be completed in a second stage of the project using additional sprints but are not necessary for delivery of the MVP.
+I used GitHub issues to set out the requirements of the project using GitHub projects to label the different priorities so it was easy to see the relative importance of meeting each requirement in the sprint. There are additional requirements which are left as open tickets which could be completed in a second stage of the project using additional sprints but are not necessary for delivery of the MVP.
 
-Once the requirements for the project had been satisfied I merged that branch into the main branch using a pull request. I ensured that the issue was linked to the pull request by tagging it, however, noticed that this often resulted in duplications of an issue as it existed as a pull request and issue in the github project. Hence, I altered the github projects workflow to only add issues rather than pull requests to the project to fix this issue.
+Once the requirements for the project had been satisfied I merged that branch into the main branch using a pull request. I ensured that the issue was linked to the pull request by tagging it, however, noticed that this often resulted in duplications of an issue as it existed as a pull request and issue in the GitHub project. Hence, I altered the GitHub projects workflow to only add issues rather than pull requests to the project to fix this issue.
 
 ## Minimal Viable Product
 
-The first stage of creating the minimal viable project (MVP) was first to understand the tech stack. Having never worked with github pages before I first wanted to ensure that my project could be hosted on the platform. I did this by first creating an HTML file and configuring the github actions to upload this to github pages. I then incorporated css into the HTML file and pushed the updates. The github actions enabled each new update to the branch to automatically update the github pages reducing the manual processes. I then tested the incorporation of Javascript using a basic button and found this successful on the deployed website.
+The first stage of creating the minimal viable project (MVP) was first to understand the tech stack. Having never worked with GitHub pages before I first wanted to ensure that my project could be hosted on the platform. I did this by first creating an HTML file and configuring the GitHub actions to upload this to GitHub pages. I then incorporated css into the HTML file and pushed the updates. The GitHub actions enabled each new update to the branch to automatically update the GitHub pages reducing the manual processes. I then tested the incorporation of Javascript using a basic button and found this successful on the deployed website.
 
 I then focused on writing my unit testing framework to catch any errors during the development phase. This reduces the costs of bug fixes later on in the development. To do this I created a basic functions file with a simple test using the jest testing framework.
 
@@ -52,7 +52,7 @@ I started with a very basic test framework to ensure that jest was working corre
 
 ![](images/basic_jest-tests.png) 
 
-Once I had ensured that the tests were working correctly locally I pushed them to github. I then used github actions to setup continuous integration testing. This means that whenever changes are push or a pull request is started the tests are automatically conducted ensuring that errors are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
+Once I had ensured that the tests were working correctly locally I pushed them to GitHub. I then used GitHub actions to setup continuous integration testing. This means that whenever changes are push or a pull request is started the tests are automatically conducted ensuring that errors are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
 
 ![](images/successful_pull.png)
 
@@ -62,7 +62,7 @@ I also conducted manual testing using the web app to ensure that users would fin
 
 ### Accessibility testing
 
-I used the issues tab to inspect the hosted webpage on github pages to view any accessibility concerns. This showed an issue of the HTML element not having a language attribute. This poses an issue for those with screen readers which might be unsure which language the webpage is in.
+I used the issues tab to inspect the hosted webpage on GitHub pages to view any accessibility concerns. This showed an issue of the HTML element not having a language attribute. This poses an issue for those with screen readers which might be unsure which language the webpage is in.
 
 ![](images/google_inspect.png)
 
@@ -109,7 +109,7 @@ To install the correct dependencies open up a new terminal with command prompt, 
 
 #### Using live server to run the application locally
 
-If working in visual studio code, which I recommend due to it's ability to work with JS, HTML and CSS at the same time, you can install the Live Server extension from Ritwick Dey which can be found in the extensions tab in Visual Studio Code. Once installed you can use the Go Live button to load the website in your default browser. This enables live testing of the web app to ensure functionality before it is deployed to github pages.
+If working in visual studio code, which I recommend due to it's ability to work with JS, HTML and CSS at the same time, you can install the Live Server extension from Ritwick Dey which can be found in the extensions tab in Visual Studio Code. Once installed you can use the Go Live button to load the website in your default browser. This enables live testing of the web app to ensure functionality before it is deployed to GitHub pages.
 
 ### Adding additional features
 
@@ -117,7 +117,7 @@ If while working on the code you notice that there are additional features or bu
 
 #### Create a new ticket
 
-You must create a new ticket which is linked to the project as a GitHub issue, or assign yourself to an existing ticket. You should then create a new sprint in the github projects page detailing how long you expect to spend on the code improvement. Then assign all of the relevant tickets to the sprint. Once this has been done you are ready to begin coding.
+You must create a new ticket which is linked to the project as a GitHub issue, or assign yourself to an existing ticket. You should then create a new sprint in the GitHub projects page detailing how long you expect to spend on the code improvement. Then assign all of the relevant tickets to the sprint. Once this has been done you are ready to begin coding.
 
 #### Create a new branch
 
