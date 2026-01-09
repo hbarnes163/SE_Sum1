@@ -370,18 +370,20 @@ code {
 <p>In this project I am going to create a simple web app for the purpose of randomly generating a list of a specified number of numbers. There will also be options for specifying a minimum and maximum value.</p>
 <h2 id="project-design">Project design</h2>
 <p>I used figma to design and prototype my project. This involved creating a basic layout of the app including 3 different inputs and a button to generate the numbers. I used figma protyping to show how once the button was clicked the numbers generated would appear below.</p>
-<p><img src="images/figma1.png" alt=""></p>
-<p><img src="images/figma2.png" alt=""></p>
-<p>The final project differed slightly from this design.</p>
+<p><img src="images/figma1.png" alt="Initial figma webpage"></p>
+<p><img src="images/figma2.png" alt="Figma page after button is clicked showing output"></p>
+<p><img src="images/figma_full.png" alt="The full prototype with connecting arrows"></p>
 <h2 id="project-plan">Project plan</h2>
 <p>I used GitHub projects along with issues to plan and manage my project.</p>
-<p><img src="images/github_projects.png" alt=""></p>
+<p><img src="images/github_projects.png" alt="Mid sprint project board"></p>
 <p>To do this I used an agile framework based around sprints, this was because due to holidays I needed to be flexible with project delivery. Working iteratively also ensured that I was able to continuously test the code and deployment with GitHub pages ensuring that errors were spotted early on. I ensured I had a basic plan for each sprint by following a timeline as can be seen below, however, I added additional issues and tasks during each sprint when problems arose.</p>
-<p><img src="images/timeline.png" alt=""></p>
-<p>When writing the tests to check the random integer generator functionality the CI testing which I set-up earlier raised an error in the tests, thankfully this was easily fixable at this stage and I addressed the error in the current sprint by raising additional tickets and reprioritising other tickets accordingly.</p>
-<p><img src="images/failed_test.png" alt=""></p>
+<p><img src="images/timeline.png" alt="Timeline of tasks and associated upcoming sprints"></p>
+<p>I used the Moscow framework to priorise the tasks wich enabled me to push back tasks to later sprints to ensure that the main issues were prioritised.</p>
+<p><img src="images/moscow.png" alt="All requirements set out in a MoSCoW framework"></p>
 <h2 id="requirements">Requirements</h2>
 <p>I used GitHub issues to set out the requirements of the project using GitHub projects to label the different priorities so it was easy to see the relative importance of meeting each requirement in the sprint. There are additional requirements which are left as open tickets which could be completed in a second stage of the project using additional sprints but are not necessary for delivery of the MVP.</p>
+<p><img src="images/bug_ticket.png" alt="Image of a bug ticket setting out specific issue"></p>
+<p><img src="images/feature_ticket.png" alt="Image of a feature ticket setting out task and required sub tasks"></p>
 <p>Once the requirements for the project had been satisfied I merged that branch into the main branch using a pull request. I ensured that the issue was linked to the pull request by tagging it, however, noticed that this often resulted in duplications of an issue as it existed as a pull request and issue in the GitHub project. Hence, I altered the GitHub projects workflow to only add issues rather than pull requests to the project to fix this issue.</p>
 <h2 id="minimal-viable-product">Minimal Viable Product</h2>
 <p>The first stage of creating the minimal viable project (MVP) was first to understand the tech stack. Having never worked with GitHub pages before I first wanted to ensure that my project could be hosted on the platform. I did this by first creating an HTML file and configuring the GitHub actions to upload this to GitHub pages. I then incorporated css into the HTML file and pushed the updates. The GitHub actions enabled each new update to the branch to automatically update the GitHub pages reducing the manual processes. I then tested the incorporation of Javascript using a basic button and found this successful on the deployed website.</p>
@@ -391,20 +393,22 @@ code {
 <h2 id="testing">Testing</h2>
 <h3 id="continuous-integration-testing">Continuous integration testing</h3>
 <p>I started with a very basic test framework to ensure that jest was working correctly on my system.</p>
-<p><img src="images/basic_jest-tests.png" alt=""></p>
+<p><img src="images/basic_jest-tests.png" alt="Jest tests passing locally"></p>
 <p>Once I had ensured that the tests were working correctly locally I pushed them to GitHub. I then used GitHub actions to setup continuous integration testing. This means that whenever changes are push or a pull request is started the tests are automatically conducted ensuring that errors are picked up immediately. This saves time running tests manually and ensures that high code standards are met.</p>
-<p><img src="images/successful_pull.png" alt=""></p>
+<p><img src="images/successful_pull.png" alt="Pull request can be merged following successful integration"></p>
+<p>When writing the tests to check the random integer generator functionality the CI testing which I set-up earlier raised an error in the tests, thankfully this was easily fixable at this stage and I addressed the error in the current sprint by raising additional tickets and reprioritising other tickets accordingly.</p>
+<p><img src="images/failed_test.png" alt="CI failed highlighting an issue which needs to be addressed"></p>
 <h3 id="manual-testing">Manual testing</h3>
 <p>I also conducted manual testing using the web app to ensure that users would find the app easy to use and not encounter any bugs. While doing this I noticed that it was hard to tell when the button was hovered over as it didn't change formatting, hence I added additional CSS styling to address this issue. All other parts of the application worked as expected. Ahead of final release I would also have the end users conduct UAT testing to identify any final bugs.</p>
 <h3 id="accessibility-testing">Accessibility testing</h3>
 <p>I used the issues tab to inspect the hosted webpage on GitHub pages to view any accessibility concerns. This showed an issue of the HTML element not having a language attribute. This poses an issue for those with screen readers which might be unsure which language the webpage is in.</p>
-<p><img src="images/google_inspect.png" alt=""></p>
+<p><img src="images/google_inspect.png" alt="Inspection of the webpage for accessibility issues"></p>
 <p>I also used google lighthouse to test the webpage. This resulted in a very good score across all tested attributes including accessibily which scored a 97.</p>
-<p><img src="images/google_lighthouse.png" alt=""></p>
+<p><img src="images/google_lighthouse.png" alt="Inspection of webpage using google lighthouse"></p>
 <h2 id="user-documentation">User documentation</h2>
 <h3 id="using-the-website">Using the website</h3>
 <p>The application can be accessed from the following <a href="https://hbarnes163.github.io/SE_Sum1/">website</a>. On the website there are 3 different numeric inputs.</p>
-<p><img src="images/webpage.png" alt=""></p>
+<p><img src="images/webpage.png" alt="First screen of the webpage"></p>
 <p><strong>How many numbers do you want to generate?</strong> takes a positive integer input for the number of numbers to generate
 <strong>The minimum</strong> and <strong>The maximum</strong> each take integer inputs for the minimum and maximum limits of the generated values.</p>
 <p><strong>Generate</strong>, once you are happy with the inputs click on the generate button to generate the list of numbers. If any of the above conditions are violated, e.g -1 numbers to generate, then the generate button will produce no numbers. Otherwise a list of numbers will appear below the generate button. If you are unhappy with the numbers or wish to change the inputs you can do so before clicking generate again.</p>
