@@ -8,29 +8,33 @@ In this project I am going to create a simple web app for the purpose of randoml
 
 I used figma to design and prototype my project. This involved creating a basic layout of the app including 3 different inputs and a button to generate the numbers. I used figma protyping to show how once the button was clicked the numbers generated would appear below.
 
-![](images/figma1.png)
+![Initial figma webpage](images/figma1.png)
 
-![](images/figma2.png)
+![Figma page after button is clicked showing output](images/figma2.png)
 
-The final project differed slightly from this design.
+![The full prototype with connecting arrows](images/figma_full.png)
 
 ## Project plan
 
 I used GitHub projects along with issues to plan and manage my project.
 
-![](images/github_projects.png)
+![Mid sprint project board](images/github_projects.png)
 
 To do this I used an agile framework based around sprints, this was because due to holidays I needed to be flexible with project delivery. Working iteratively also ensured that I was able to continuously test the code and deployment with GitHub pages ensuring that errors were spotted early on. I ensured I had a basic plan for each sprint by following a timeline as can be seen below, however, I added additional issues and tasks during each sprint when problems arose.
 
-![](images/timeline.png)
+![Timeline of tasks and associated upcoming sprints](images/timeline.png)
 
-When writing the tests to check the random integer generator functionality the CI testing which I set-up earlier raised an error in the tests, thankfully this was easily fixable at this stage and I addressed the error in the current sprint by raising additional tickets and reprioritising other tickets accordingly.
+I used the Moscow framework to priorise the tasks wich enabled me to push back tasks to later sprints to ensure that the main issues were prioritised.
 
-![](images/failed_test.png)
+![All requirements set out in a MoSCoW framework](images/moscow.png)
 
 ## Requirements
 
 I used GitHub issues to set out the requirements of the project using GitHub projects to label the different priorities so it was easy to see the relative importance of meeting each requirement in the sprint. There are additional requirements which are left as open tickets which could be completed in a second stage of the project using additional sprints but are not necessary for delivery of the MVP.
+
+![Image of a bug ticket setting out specific issue](images/bug_ticket.png)
+
+![Image of a feature ticket setting out task and required sub tasks](images/feature_ticket.png)
 
 Once the requirements for the project had been satisfied I merged that branch into the main branch using a pull request. I ensured that the issue was linked to the pull request by tagging it, however, noticed that this often resulted in duplications of an issue as it existed as a pull request and issue in the GitHub project. Hence, I altered the GitHub projects workflow to only add issues rather than pull requests to the project to fix this issue.
 
@@ -50,11 +54,15 @@ After testing all the HTML and Javascript manually I then added the CSS styling,
 
 I started with a very basic test framework to ensure that jest was working correctly on my system. 
 
-![](images/basic_jest-tests.png) 
+![Jest tests passing locally](images/basic_jest-tests.png) 
 
 Once I had ensured that the tests were working correctly locally I pushed them to GitHub. I then used GitHub actions to setup continuous integration testing. This means that whenever changes are push or a pull request is started the tests are automatically conducted ensuring that errors are picked up immediately. This saves time running tests manually and ensures that high code standards are met.
 
-![](images/successful_pull.png)
+![Pull request can be merged following successful integration](images/successful_pull.png)
+
+When writing the tests to check the random integer generator functionality the CI testing which I set-up earlier raised an error in the tests, thankfully this was easily fixable at this stage and I addressed the error in the current sprint by raising additional tickets and reprioritising other tickets accordingly.
+
+![CI failed highlighting an issue which needs to be addressed](images/failed_test.png)
 
 ### Manual testing
 
@@ -64,11 +72,11 @@ I also conducted manual testing using the web app to ensure that users would fin
 
 I used the issues tab to inspect the hosted webpage on GitHub pages to view any accessibility concerns. This showed an issue of the HTML element not having a language attribute. This poses an issue for those with screen readers which might be unsure which language the webpage is in.
 
-![](images/google_inspect.png)
+![Inspection of the webpage for accessibility issues](images/google_inspect.png)
 
 I also used google lighthouse to test the webpage. This resulted in a very good score across all tested attributes including accessibily which scored a 97.
 
-![](images/google_lighthouse.png)
+![Inspection of webpage using google lighthouse](images/google_lighthouse.png)
 
 ## User documentation
 
@@ -76,7 +84,7 @@ I also used google lighthouse to test the webpage. This resulted in a very good 
 
 The application can be accessed from the following [website](https://hbarnes163.github.io/SE_Sum1/). On the website there are 3 different numeric inputs. 
 
-![](images/webpage.png)
+![First screen of the webpage](images/webpage.png)
 
 **How many numbers do you want to generate?** takes a positive integer input for the number of numbers to generate
 **The minimum** and **The maximum** each take integer inputs for the minimum and maximum limits of the generated values.
